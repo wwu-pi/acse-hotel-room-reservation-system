@@ -1,0 +1,15 @@
+CREATE TABLE Client(
+        clientNo  INT   NOT NULL PRIMARY KEY AUTO_INCREMENT,  
+        firstName  VARCHAR(20)  NOT NULL ,  
+        lastName  VARCHAR(20)   NOT NULL,  
+        phoneNo  VARCHAR(20));
+CREATE TABLE Reservation(
+        arrival  DATE  NOT NULL ,  
+        departure  DATE  NOT NULL ,  
+        clientNo INT NOT NULL, 
+        roomNo INT NOT NULL, 
+        reservationNo  INT NOT NULL  PRIMARY KEY AUTO_INCREMENT);
+CREATE TABLE Room(
+        size  VARCHAR(20)  NOT NULL ,  
+        price  INT  NOT NULL ,  
+        roomNo  INT   NOT NULL PRIMARY KEY AUTO_INCREMENT);

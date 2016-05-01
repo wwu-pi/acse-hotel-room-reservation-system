@@ -1,0 +1,21 @@
+- MySQL-Konsole unter Programme starten, Password: a...s
+- CREATE DATABASE hotel;
+- show databases;
+- use hotel;
+- show tables;
+- CREATE TABLE Client(
+    ClientNo INT NOT NULL PRIMARY KEY,
+    FirstName VARCHAR(20) NOT NULL,
+    LastName VARCHAR (20) NOT NULL,
+    PhoneNo VARCHAR(20));
+- DESCRIBE Client;
+- drop table Client;
+- INSERT INTO Client
+  VALUES (1,'Willy','Winzig', NULL);
+- SELECT * FROM Client;
+- SELECT FirstName 
+  FROM Client
+  WHERE LastName = 'Winzig';
+- DELETE FROM Client;
+- quit;
+  
