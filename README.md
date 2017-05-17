@@ -1,6 +1,6 @@
 # Hotel Room Reservation System
 This repository contains 4 Eclipse projects. All of them can be imported by
-choosing File -> Import -> General -> Existing Projects into Workspace and 
+choosing File -> Import -> General -> Existing Projects into Workspace and
 using Browse to find the archive on your file system.
 
 ## Projects
@@ -18,5 +18,9 @@ using Browse to find the archive on your file system.
   * the DDL has been polished manually
 4. HotelUMLClassDiagramWithStereotypes
   * is a Papyrus project with a UML class diagram of the HRRS and with a corresponding UML profile
-  * the project name must not contain blanks (or special characters) 
+  * the project name must not contain blanks (or special characters)
 
+## Installation instructions
+
+* Open the build path of the `Hotel Java` project, switch to the `Libraries` tab and edit the `swt.jar` library location according to your platform (packages are provided for Windows, Linux, and MacOS)
+* Repeat these steps for the `Hotel Java DAO` project
