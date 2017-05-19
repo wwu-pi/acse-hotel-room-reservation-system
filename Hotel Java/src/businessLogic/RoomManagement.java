@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class RoomManagement {
 	private static String connectionString =
-		"jdbc:mysql://localhost/hotel?user=me&password=mysecret";
+		"jdbc:mysql://localhost/hotel?user=root&password=acse";
 	
 	public static int findRoom(Date arrival, Date departure){
 		System.out.print("Arrival: "+arrival+", ");
