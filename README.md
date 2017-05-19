@@ -22,5 +22,13 @@ using Browse to find the archive on your file system.
 
 ## Installation instructions
 
-* Open the build path of the `Hotel Java` project, switch to the `Libraries` tab and edit the `swt.jar` library location according to your platform (packages are provided for Windows, Linux, and MacOS)
+* Open the build path of the `Hotel Java` project, switch to the `Libraries` tab and edit the `swt.jar` library locationcd according to your platform (packages are provided for Windows, Linux, and MacOS)
 * Repeat these steps for the `Hotel Java DAO` project
+
+## Run instructions
+
+*  Additional preparation steps for Docker Toolbox users:
+  * Find out your Docker IP using `docker-machine ip`
+  * In the class businessLogic.RoomManagement, replace "localhost" in the connection string with this IP
+* Start the database using `docker run -d -p 3306:3306 wwupi/mysql-acse-2017`
+* Run the Java application (main method is located in class gui.ReservationRequest)
